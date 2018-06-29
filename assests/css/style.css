@@ -1,0 +1,72 @@
+body {
+    
+    background-image: url("../images/Background.jpg");
+    font-family: sans-serif;
+}
+
+.w-25 {
+    
+    margin-left: 10px;
+    background-color: chocolate;
+    margin-top: 10px;
+    height: 100px;
+    
+}
+
+.w-50 {
+    
+    background-color: burlywood;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+   height: 400px;
+    
+}
+
+.match{
+    
+    background-color: darksalmon;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding:10px; 
+    height: 100px;
+}
+
+#randomNumber{
+    
+    background-color: darksalmon;
+    margin-top: 10px;
+    padding:10px; 
+    height: 100px;
+}
+
+.gameStatistics {
+    
+    background-color: aqua;
+    margin: 10px;
+    padding-top: 5px;
+    height: 100px;
+}
+
+.image {
+    
+    margin-left: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+.score{
+    
+    background-color: cadetblue;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 25px;
+}
+
+.scoreCount {
+    
+    background-color: cadetblue;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 100px;
+}
