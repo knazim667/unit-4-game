@@ -1,8 +1,9 @@
 //creating variables
+$(document).ready(function() {
 
-var wins = 0;
-var lost = 0;
-var score = 0;
+    var wins = 0;
+    var lost = 0;
+    var score = 0;
 
 // Create a computer generator number for match
 var computerGuess = parseInt(Math.floor(Math.random() * 120) + 19);
@@ -40,7 +41,6 @@ function reset () {
 }
 
 //create a click function for images generate number
-$(document).ready(function() {
     
 
 $("#stone1").on("click", function() {
@@ -48,6 +48,11 @@ $("#stone1").on("click", function() {
             score = score + stone1;
             $("#score").html(score);
             console.log("score1 " + score);
+            if (score == computerGuess) {
+                checkifwon();
+            }else if (score > computerGuess) {
+                checkifwon();
+            }
 });
     
 $("#stone2").on("click", function() {
@@ -55,6 +60,11 @@ $("#stone2").on("click", function() {
             score = score + stone2;
             $("#score").html(score);
             console.log("score2 " + score);
+            if (score == computerGuess) {
+                checkifwon();
+            }else if (score > computerGuess) {
+                checkifwon();
+            }
 });
     
 $("#stone3").on("click", function() {
@@ -62,6 +72,11 @@ $("#stone3").on("click", function() {
             score = score + stone3;
             $("#score").html(score);
             console.log("score3 " + score);
+            if (score == computerGuess) {
+                checkifwon();
+            }else if (score > computerGuess) {
+                checkifwon();
+            }
 });
 
 $("#stone4").on("click", function() {
@@ -69,24 +84,32 @@ $("#stone4").on("click", function() {
             score = score + stone4;
             $("#score").html(score);
             console.log("score4 " + score);
+            if (score == computerGuess) {
+                checkifwon();
+            }else if (score > computerGuess) {
+                checkifwon();
+            }
 });
 
     // create win and lost
-
-if(score === computerGuess) {
+function checkifwon() {
+    
+    if(score === computerGuess) {
     
     wins++;
     console.log(wins);
     $("#winn").html("You Win");
-    $("#win").html(wins);
+    $("#win").html("win: " +wins);
     reset();
 } else if (score > computerGuess) {
     
     lost++;
     console.log(lost);
     $("#winn").html("You Lost");
-    $("#lost").html(lost);
+    $("#lost").html("Lost: " +lost);
     reset();
+}
+  
 }
     
 });
