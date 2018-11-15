@@ -27,5 +27,10 @@ Clone Crystal-Collector-Game to your local git repo like the following:
 The Crystal-Collector-Game project and its files should now be in your project folder.
 
 ### Step 2: launch App
-Open index.html file in browser (Chrome Preferred)
-Or Visit [Click Here]
+Open index.html file in browser (Chrome Preferred):
+
+Or Visit [Click Here](https://knazim667.github.io/unit-4-game/).
+
+## App Display
+
+![image](https://i.imgur.com/Gk4cmGL.png)
