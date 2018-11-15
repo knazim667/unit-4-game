@@ -106,7 +106,7 @@ function checkifwon() {
     lost++;
     console.log(lost);
     $("#winn").html("You Lost");
-    $("#lost").html("Lost: " +lost);
+    $("#lost").html("Lost: " + lost);
     reset();
 }
   
